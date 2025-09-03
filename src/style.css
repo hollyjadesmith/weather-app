@@ -45,3 +45,40 @@ body {
     opacity: 50;
 
 }
+
+h1 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-left: 5px;
+    font-size: 45px;
+}
+
+
+.forecast-weather{
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.forecast-weather li{
+    background-color: #7c8ba3;
+    padding: 15px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.summary {
+    font-size: 17px;
+    line-height: 25px;
+
+}
+
+.wind-speed {
+    font-size: 17px;
+    line-height: 25px;
+}
