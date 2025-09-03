@@ -55,19 +55,20 @@ h1 {
 }
 
 
-.forecast-weather{
+.forecast-weather {
     list-style-type: none;
     padding: 0;
     position: relative;
-    bottom: 130px;
+    bottom: 170px;
 }
 
 .forecast-weather li{
     background-color: #7c8ba3;
-    padding: 15px 10px;
+    padding: 25px 10px;
     border-radius: 5px;
     display: inline-block;
     margin-right: 40px;
+    margin-bottom: 30px;
     text-align: center;
     font-size: 17px;
     line-height: 25px;
