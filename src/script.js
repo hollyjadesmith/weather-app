@@ -15,6 +15,10 @@ function updateWeather(response) {
     let humidity = response.data.temperature.humidity;
     humidityElement.innerHTML = humidity + "%";
 
+    let windSpeedElement = document.querySelector("#wind-speed");
+    let windSpeed = response.data.wind.speed;
+    windSpeedElement.innerHTML = windSpeed + "mph";
+
 }
 
 function changeSymbol(response){
