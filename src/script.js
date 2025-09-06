@@ -17,13 +17,13 @@ function updateWeather(response) {
 
 }
 
-function changeSymbol(response){
+function changeSymbol(receive){
+    symbolElement = document.querySelector("#symbol")
     
-    let bigSymbolElement = document.querySelector("#big-symbol");
-    let bigSymbol = response.data.icon_url;
-    bigSymbolElement.innerHTML = ;
-
+    let symbol = response.data.condition.icon_url
+    symbolElement.innerHTML = symbol;
 }
+
 
 function searchCity(city){
 
