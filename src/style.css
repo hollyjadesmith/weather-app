@@ -55,28 +55,29 @@ h1 {
     color: white;
 }
 
-.forecast-weather {
-    list-style-type: none;
+.weather-forecast-day {
     padding: 0;
     position: relative;
     bottom: 150px;
     color: white;
-}
-
-.forecast-weather li{
     background-color: rgba(124, 139, 163, 0.4);
-    color: white;
-    padding: 25px 10px;
+    padding: 15px 10px;
     border-radius: 5px;
     display: inline-block;
     justify-content: space-around;
-    margin-right: 40px;
-    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
     text-align: center;
-    font-size: 17px;
-    line-height: 25px;
-
+    font-size: 15px;
+    line-height: 20px;
 }
+
+#weather-forecast-icon {
+    size: 25px;
+}
+
+.weather-forecast-temperatures
+
 
 .summary {
     font-size: 17px;
