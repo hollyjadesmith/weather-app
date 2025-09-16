@@ -71,12 +71,13 @@ h1 {
     font-size: 15px;
     line-height: 20px;
 }
-
-#weather-forecast-icon {
+.weather-forecast-icon {
     size: 25px;
 }
 
-.weather-forecast-temperatures
+.weather-forecast-temperatures{
+
+}
 
 
 .summary {
