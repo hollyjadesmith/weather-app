@@ -19,6 +19,8 @@ function updateWeather(response) {
     let windSpeed = response.data.wind.speed;
     windSpeedElement.innerHTML = windSpeed + "mph";
 
+getForecast(response.data.city);
+
 }
 
 function changeSymbol(response){
