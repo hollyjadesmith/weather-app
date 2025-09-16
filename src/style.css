@@ -69,6 +69,7 @@ h1 {
     padding: 25px 10px;
     border-radius: 5px;
     display: inline-block;
+    justify-content: space-around;
     margin-right: 40px;
     margin-bottom: 20px;
     text-align: center;

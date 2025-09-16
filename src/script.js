@@ -27,7 +27,6 @@ function changeSymbol(response){
     symbolElement.src = symbolUrl;
 }
 
-
 function searchCity(city){
 
 let apiKey = "o94ea318dba23fta40204c3af2064fda";
@@ -49,3 +48,32 @@ function handleSearchSubmit(event){
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+function getForecast (city){
+
+let apiKey = "o94ea318dba23fta40204c3af2064fda";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${aipKey}`;
+axios(apiUq).then(displayForecast);
+}
+
+function displayForecast(response) {
+    let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+    let forecastHtml = `<ul class="forecast-weather">`;
+
+    days.forEach(function(day) {
+        forecastHtml += `
+            <li>
+                <div class="day-name">${day}</div>
+                <div class="small-symbol">☀</div>
+                <div class="degrees">17 <span class="small-degrees">°C</span></div>
+            </li>
+        `;
+    });
+
+    forecastHtml += `</ul>`;
+
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
