@@ -61,7 +61,7 @@ axios.get(apiUrl).then(displayForecast);
 }
 
 function formatDay(timestamp){
-    let date = new Date(timestamp + 1000);
+    let date = new Date(timestamp * 1000);
     let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
     return days[date.getDay()];
 }
